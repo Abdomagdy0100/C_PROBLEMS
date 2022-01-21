@@ -23,7 +23,7 @@ void main(void)
 	for(i=0 ; i<10 ;i++)
 	{
 	    printf("\nplese enter (%d) : ",i+1);
-		scanf("%d",&arr[i]);
+	    scanf("%d",&arr[i]);
 	}
 	
 	printf("\nplese enter (%d) : ",arr[9]);
