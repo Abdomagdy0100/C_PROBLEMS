@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/*in this program we need to find maximum XORing between input operands*/
 void main (void)
 {
 	int i, v, arr[5]={0};
