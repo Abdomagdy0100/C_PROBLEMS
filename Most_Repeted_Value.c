@@ -13,7 +13,7 @@ void main (void)
 		
 		for(z=i ; z<10 ;z++) //here the choosen element will be compared with all other elements-start from i not from 0 
 		{
-			if(arr[i] == arr[z] && z>i) //if the choosen found again
+			if(arr[i] == arr[z]) //if the choosen found again
 			{
 				flag++; //increment the flag by 1 "found one more time"
 				
@@ -25,5 +25,5 @@ void main (void)
 			}	
 		}
 	}
-	printf("\n %d  repeated = %d times",num,flag_update+1);	
+	printf("\n %d  repeated = %d times",num,flag_update);	
 }
