@@ -2,7 +2,7 @@
 
 void main(void)
 {
-int i,s,temp, seq[5]={1,2,3,4,5};
+int i,s,temp,b, seq[5]={0,1,2,3,4};
 
 	printf("\n\t\t plese enter no of shifts : ");
 	scanf("%d",&s);
@@ -14,19 +14,21 @@ int i,s,temp, seq[5]={1,2,3,4,5};
 	}
 	
 	//shifting
-	
-	 temp=seq[4];
-	
-	for(i=4 ; i>=0 ; i--)
+	for(b=1 ; b<=s ; b++)
 	{
-		seq[i]=seq[i-1];
+		temp=seq[4];
+		
+		for(i=4 ; i>0 ; i--)
+		{
+			seq[i]=seq[i-1];
+		}
+		seq[0]=temp;
 	}
 	
-	seq[0]=temp;
 	
 	//after sorting
-	for(i=4 ; i<=0; i--)
+	for(i=0 ; i<=4; i++)
 	{
-		printf("\n ele %d = %d ",i+1 , seq[i]);
+		printf("\n \n\nele %d = %d ",i+1 , seq[i]);
 	}
 }
